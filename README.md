@@ -1,35 +1,29 @@
-How to run the app?
-OpenAI instantly revokes the API key once it detects that the key has been exposed publicly. So, that's the only thing to take care of.
+# ChatCSV Streamlit App
 
-Generate your OpenAI API key here: Click Here
+This repository contains a **Streamlit app** that lets you interact with CSV files using OpenAI's API for natural language processing. The app allows users to upload CSV files, ask questions about the data, and receive detailed responses in an intuitive interface.
 
-Run locally
-If you are running the app locally, then you can freely use the API key.
-in app.py, line 11:
+---
 
+## Features
 
-openai_api_key = 's#-#####################jz'
+- 📂 **Upload CSV Files**: Drag and drop your CSV files for instant processing.
+- 💬 **Ask Questions**: Query the data in plain English, powered by OpenAI.
+- 📊 **Detailed Insights**: Get meaningful answers from your data.
+- 🌐 **Run Locally or on Cloud**: Easily deploy on your local machine or Streamlit Cloud.
 
-#can set the API key directly, if running locally.
+---
 
-Else if you want to keep the key private, store it in an environment variable named 'API_KEY' in your OS and then refer the key in app.py by:
+## Installation and Usage
 
-from dotenv import load_dotenv
-load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
+```bash
+# Clone the repository
+git clone https://github.com/YashRathore-03/CSV-Dashboard-AI.git
 
-Henceforth make sure to have Streamlit installed in your system. Run the app by:
+# Change directory to the project folder
+cd YourRepo
 
-git clone https://github.com/AIAnytime/ChatCSV-Streamlit-App.git
-cd ChatCSV-Streamlit-App
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the app
 streamlit run app.py
-
-Run on Cloud
-You can also run this app locally on Streamlit Cloud, which is a free Cloud Hosting Service.
-Make a .env file and store the key as
-
-OPENAI_API_KEY='##-###############'
-
-There's already a .gitignore file with .env mentioned in it. If not, make one.
-Remaining code remains the same.
