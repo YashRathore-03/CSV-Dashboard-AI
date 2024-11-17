@@ -1,4 +1,4 @@
-# ChatCSV Streamlit App
+# CSV DASHBOARD
 
 This repository contains a **Streamlit app** that lets you interact with CSV files using OpenAI's API for natural language processing. The app allows users to upload CSV files, ask questions about the data, and receive detailed responses in an intuitive interface.
 
