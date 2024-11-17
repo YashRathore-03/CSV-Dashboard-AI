@@ -12,9 +12,17 @@ This repository contains a **Streamlit app** that lets you interact with CSV fil
 - 🌐 **Run Locally or on Cloud**: Easily deploy on your local machine or Streamlit Cloud.
 
 ---
+## Get your open ai api key from 
+https://community.openai.com/t/how-to-generate-openai-api-key/401363
+
+ Replace your api key in .env file
+```bash
+openai_api_key = 's#-#####################jz'
+
+#can set the API key directly, if running locally.
 
 ## Installation and Usage
-
+```
 ```bash
 # Clone the repository
 git clone https://github.com/YashRathore-03/CSV-Dashboard-AI.git
